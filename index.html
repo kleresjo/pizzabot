@@ -9,34 +9,111 @@
 <body>
     <nav class="navbar">
         <div class="row-nav">
-        <div>
-       <a href="./index.html"><i class="fa-solid fa-pizza-slice"></i></a>
+        <div class="row">
+       <a href="./index.html"><i class="fa-solid fa-pizza-slice"></i></a> 
+       <a href="tel:123124125" class="telephone">Beställ på: 123-124-125</a>
         </div>
-        <div>
-            <p>ÖPPETTIDER 00.23-00.24</p>
-        </div>
-        <div class="nav-bars">
-            <i class="fa-solid fa-bars"></i>
-        </div>
+        <button class="hamburger">
+            <i class="fa-solid fa-bars menuIcon"></i>
+            <i class="fa-solid fa-x closeIcon"></i>
+        </button>
         <div class="nav-links">
+            <a href="/"><i class="fa-solid fa-cart-shopping"></i> Kundvagn</a>
+            <a href="/"><i class="fa-solid fa-user"></i> Mitt konto</a>
+            <a href="/"><i class="fa-solid fa-heart"></i> Mina bästa pizzor</a>
+            <a href="callto:">Beställ på: 123-124-125</a>
+            <a href="./index.html"><i class="fa-solid fa-pizza-slice pizza"></i></a>
+        </div>
+        <div class="nav-links2">
+            <p>ÖPPETTIDER: MÅN-SÖN 11.00-20.00</p>
             <a href="/"><i class="fa-solid fa-cart-shopping"></i></a>
             <a href="/"><i class="fa-solid fa-user"></i></a>
             <a href="/"><i class="fa-solid fa-heart"></i></a>
         </div>
         </div>
     </nav>
-    
+
     <div class="container">
         <div class="pizza-bot-container">
-        <p>Pizza</p>
-        <p>Pizza</p>
-        <p>Pizza</p>
-        <p>Pizza</p>
-        <p>Pizza</p>
+            <h2>Order your pizza here:</h2>
+        <form action="" id="pizzaBot">
+            <label for="pizza" class="label">What pizza do you want?</label> <br>
+            <select name="pizza" id="choosePizza" placeholder="What pizza do you want?">
+                <option value="Hawaiian pizza" id="hawaiipizz">Hawaiian pizza</option>
+                <option value="Pepperoni pizza" id="pepppiz">Pepperoni pizza</option>
+                <option value="Vegetarian pizza" id="vegpiz">Vegetarian pizza</option>
+            </select>
+            <br>
+            <label for="quantityInput" class="label">How many pizzas do you want?</label> <br>
+            <select name="" id="quantityInput">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select> <br>
+            <input type="submit" value="Order" id="subBtn" onclick="addCode()">
+            <div id="add_to_me"></div>
+        </form>
     </div>
     </div>
+<h1 class="title">OUR MENU</h1>
+<div>
+<div class="menu-item">
+    <div class="menu-img">
+        <img src="./images/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="" class="pizza-menu-img">
+    </div>
+    <div class="menu-text">
+    <h2>MARGHERITA</h2>
+    <h4>Margherita är en enkel pizza som endast toppas med tomatsås och ost</h4>
+    <p class="price">120kr</p>
+    </div>
+</div>
+<div class="menu-item menu-item-reversed">
+    <div class="menu-img">
+    <img src="./images/foad-roshan-Y6OgisiGBjM-unsplash.jpg" alt="" class="pizza-menu-img">
+    </div>
+    <div class="menu-text">
+    <h2>PEPERONI</h2>
+    <h4>Pepperonin är i USA en vanlig fyllning på pizza tillsammans med ost och tomatsås.</h4>
+    <p class="price">160kr</p>
+    </div>
+    </div>
+<div class="menu-item">
+    <div class="menu-img">
+        <img src="./images/rahul-upadhyay-yDKHJxfiWDk-unsplash.jpg" alt="" class="pizza-menu-img">
+    </div>
+    <div class="menu-text">
+    <h2>VEGETARIA</h2>
+    <h4>Grillad vegetarisk pizza med paprika, zucchini och ost.</h4>
+    <p class="price">100kr</p>
+    </div>
+</div>
+</div>
 
+<img src="./images/heather-barnes-YKvGUO4Zb7Y-unsplash.jpg" alt="" class="divider-img">
+
+<footer>
+    <div class="footer-div">
+<div>
+    <a href="./index.html"><i class="fa-solid fa-pizza-slice"></i></a>
+</div>
+<div class="footer-menu">
+    <a href="/"><i class="fa-solid fa-cart-shopping"></i> Kundvagn</a>
+    <a href="/"><i class="fa-solid fa-user"></i> Mitt konto</a>
+    <a href="/"><i class="fa-solid fa-heart"></i> Mina bästa pizzor</a>
+    <a href="callto:">Beställ på: 123-124-125</a>
+</div>
+</div>
+<p class="copyright">&copy; Pizzeria.nu 2023</p> <br>
+</footer>
+<script src="./script.js"></script>
+<script src="./pizzabot2.js"></script>
 </body>
-<script src="script.js"></script>
 <script src="https://kit.fontawesome.com/49654d2d6c.js" crossorigin="anonymous"></script>
 </html>
